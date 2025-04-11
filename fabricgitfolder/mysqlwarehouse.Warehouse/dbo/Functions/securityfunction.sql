@@ -1,0 +1,7 @@
+CREATE FUNCTION securityfunction(@UserName as VARCHAR(50))
+RETURNS TABLE
+WITH SCHEMABINDING
+AS
+RETURN SELECT 1 AS securityfunction
+WHERE @UserName = LEFT(USER_NAME(), LEN(@UserName)) OR
+LEFT(USER_NAME(),8) = 'bijusoft'
