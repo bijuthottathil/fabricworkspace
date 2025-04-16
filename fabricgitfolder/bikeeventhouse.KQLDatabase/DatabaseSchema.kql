@@ -8,3 +8,4 @@
 ```
 [{"Properties":{"Path":"$['BikepointID']"},"column":"BikepointID","datatype":""},{"Properties":{"Path":"$['Street']"},"column":"Street","datatype":""},{"Properties":{"Path":"$['Neighbourhood']"},"column":"Neighbourhood","datatype":""},{"Properties":{"Path":"$['Latitude']"},"column":"Latitude_1","datatype":""},{"Properties":{"Path":"$['Longitude']"},"column":"Longitude_1","datatype":""},{"Properties":{"Path":"$['No_Bikes']"},"column":"No_Bikes_1","datatype":""},{"Properties":{"Path":"$['No_Empty_Docks']"},"column":"No_Empty_Docks_1","datatype":""}]
 ```
+.create-merge table ss (studentid:guid, score:int) 
