@@ -2,10 +2,4 @@
 // Use management commands in this script to configure your database items, such as tables, functions, materialized views, and more.
 
 
-.create-merge table biketable (Street:string, Latitude:dynamic, Longitude:dynamic, No_Bikes:long, No_Empty_Docks:long, BikepointID:string, Bikepoint:string, BikepointIDNumber:string) 
-.create-merge table newbike (BikepointID:string, Street:string, Neighbourhood:string, Latitude:dynamic, Longitude:dynamic, No_Bikes:long, No_Empty_Docks:long, Latitude_1:real, Longitude_1:real, No_Bikes_1:int, No_Empty_Docks_1:int) 
-.create-or-alter table newbike ingestion json mapping 'newbike_mapping'
-```
-[{"Properties":{"Path":"$['BikepointID']"},"column":"BikepointID","datatype":""},{"Properties":{"Path":"$['Street']"},"column":"Street","datatype":""},{"Properties":{"Path":"$['Neighbourhood']"},"column":"Neighbourhood","datatype":""},{"Properties":{"Path":"$['Latitude']"},"column":"Latitude_1","datatype":""},{"Properties":{"Path":"$['Longitude']"},"column":"Longitude_1","datatype":""},{"Properties":{"Path":"$['No_Bikes']"},"column":"No_Bikes_1","datatype":""},{"Properties":{"Path":"$['No_Empty_Docks']"},"column":"No_Empty_Docks_1","datatype":""}]
-```
-.create-merge table ss (studentid:guid, score:int) 
+.create-merge table BikeData (BikepointID:string, Street:string, Neighbourhood:string, Latitude:dynamic, Longitude:dynamic, No_Bikes:long, No_Empty_Docks:long) 
