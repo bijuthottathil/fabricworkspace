@@ -18,20 +18,8 @@
         "dataSourceId": "f7f17e17-aab9-4634-8d31-a35f64ae3e71"
       },
       {
-        "id": "bd851d9c-d1b7-4f85-8a26-d7474b3ee3b8",
-        "content": "\n\n// Use 'take' to view a sample number of records in the table and check the data.\nbiketable\n| take 100\n",
-        "title": "",
-        "dataSourceId": "f7f17e17-aab9-4634-8d31-a35f64ae3e71"
-      },
-      {
-        "id": "2c4c62cc-e38b-4ddc-a041-f81bbaa75fcf",
-        "content": "// Use 'take' to view a sample number of records in the table and check the data.\nnewbike\n| take 100\n",
-        "title": "",
-        "dataSourceId": "f7f17e17-aab9-4634-8d31-a35f64ae3e71"
-      },
-      {
-        "id": "b54cf755-2e0a-4489-9ffb-e075e91c3a98",
-        "content": "// Use 'take' to view a sample number of records in the table and check the data.\nnewbike\n| extend total=No_Bikes_1+No_Empty_Docks_1 \n\n.show  tables \n.create table ss(studentid:guid,score:int)\n.ingest inline into ss  <|123e4567-e89b-12d3-a456-426614174000,88",
+        "id": "54dce28b-b4d8-46db-870d-bd31a6d2fb6d",
+        "content": "// Use 'take' to view a sample number of records in the table and check the data.\nbikedataupdated\n| where Neighbourhood == \"Victoria\"\n| project Street, No_Bikes, No_Empty_Docks\n\n",
         "title": "",
         "dataSourceId": "f7f17e17-aab9-4634-8d31-a35f64ae3e71"
       }
