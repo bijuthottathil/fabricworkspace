@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Warehouse",
-    "displayName": "testwarehouse"
+    "type": "Eventstream",
+    "displayName": "BikeEventStream"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "bb3732f0-b6a2-bea0-4bb2-7fd5b952d526"
+    "logicalId": "b9bef2d2-229d-99f6-411d-ca8927cb6aee"
   }
 }
