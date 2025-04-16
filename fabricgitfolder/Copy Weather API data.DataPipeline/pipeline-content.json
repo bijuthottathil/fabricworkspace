@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "RestSource",
+            "requestMethod": "GET",
+            "paginationRules": {
+              "supportRFC5988": "true"
+            },
+            "httpRequestTimeout": "00:01:40",
+            "requestInterval": "00.00:00:00.010",
+            "datasetSettings": {
+              "type": "RestResource",
+              "typeProperties": {
+                "relativeUrl": {
+                  "value": "@concat('VisualCrossingWebServices/rest/services/timeline/77479?','?unitGroup=', pipeline().parameters.unitGroup,\n       '&key=', pipeline().parameters.key,\n       '&contentType=', pipeline().parameters.contentType)",
+                  "type": "Expression"
+                }
+              },
+              "schema": [],
+              "externalReferences": {
+                "connection": "a8f48226-6374-4420-aaf2-c8e0ac290dfb"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "WeatherAPI"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "bijulakehouse",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "f05e304c-2df7-b9dc-41f9-9e235003e904",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            },
+            "columnFlattenSettings": {
+              "treatArrayAsString": false,
+              "treatStructAsString": false,
+              "flattenColumnDelimiter": "."
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy Weather API Data",
+        "dependsOn": []
+      }
+    ],
+    "parameters": {
+      "unitGroup": {
+        "type": "string",
+        "defaultValue": "us"
+      },
+      "key": {
+        "type": "string",
+        "defaultValue": "B52HY6FASG2U5YC7HWWGCY489"
+      },
+      "contentType": {
+        "type": "string",
+        "defaultValue": "json"
+      }
+    }
+  }
+}
