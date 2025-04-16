@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "copy csv to lakehouse table"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b6fc1560-3b04-a575-4d9d-e1fc74c0fb87"
+  }
+}

@@ -1,7 +1,103 @@
 {
-  "sources": [],
-  "destinations": [],
-  "streams": [],
+  "sources": [
+    {
+      "id": "da43d2bf-139a-44db-aff8-2a6d3dc585f5",
+      "name": "bikedata",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "0f3810f2-b593-456b-a5a7-497f886b2f3f",
+      "name": "destbike",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "606ed01d-4aa8-9b2a-409e-0e967b859d4b",
+        "databaseName": "bikeeventhouse",
+        "tableName": "bikedataupdated",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "BikeEventStream-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "BikeEventStream-stream",
+          "schema": {
+            "columns": [
+              {
+                "name": "BikepointID",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Street",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Neighbourhood",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Latitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Longitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Bikes",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Empty_Docks",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "f03eabdb-311d-42e3-9c2c-672fade2242c",
+      "name": "BikeEventStream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bikedata"
+        }
+      ]
+    }
+  ],
   "operators": [],
   "compatibilityLevel": "1.0"
 }
