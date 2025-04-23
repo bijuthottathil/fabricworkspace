@@ -76,6 +76,31 @@
         },
         "name": "Copy Weather API Data",
         "dependsOn": []
+      },
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "e6cbdbf1-0d31-42a1-bddd-120a174c03da",
+          "workspaceId": "c1625ff0-b7f2-4bde-a31b-03b7f7e67e04",
+          "notifyOption": "NoNotification",
+          "dataflowType": "Dataflow-Gen2"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "DataflowtocleanWeatherdata",
+        "dependsOn": [
+          {
+            "activity": "Copy Weather API Data",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
       }
     ],
     "parameters": {

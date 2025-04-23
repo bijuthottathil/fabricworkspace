@@ -13,6 +13,2611 @@
     "sourceQueryCulture": "en-US",
     "tables": [
       {
+        "name": "WeatherAPI",
+        "sourceLineageTag": "[dbo].[WeatherAPI]",
+        "columns": [
+          {
+            "name": "latitude",
+            "dataType": "double",
+            "sourceColumn": "latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "longitude",
+            "dataType": "double",
+            "sourceColumn": "longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "resolvedAddress",
+            "dataType": "string",
+            "sourceColumn": "resolvedAddress",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "resolvedAddress",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "address",
+            "dataType": "string",
+            "sourceColumn": "address",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "address",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "timezone",
+            "dataType": "string",
+            "sourceColumn": "timezone",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "timezone",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "tzoffset",
+            "dataType": "double",
+            "sourceColumn": "tzoffset",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "tzoffset",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "sourceColumn": "description",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.datetime",
+            "dataType": "string",
+            "sourceColumn": "days.datetime",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.datetime",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.datetimeEpoch",
+            "dataType": "int64",
+            "sourceColumn": "days.datetimeEpoch",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "days.datetimeEpoch",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.tempmax",
+            "dataType": "double",
+            "sourceColumn": "days.tempmax",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.tempmax",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.tempmin",
+            "dataType": "double",
+            "sourceColumn": "days.tempmin",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.tempmin",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.temp",
+            "dataType": "double",
+            "sourceColumn": "days.temp",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.temp",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.feelslikemax",
+            "dataType": "double",
+            "sourceColumn": "days.feelslikemax",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.feelslikemax",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.feelslikemin",
+            "dataType": "double",
+            "sourceColumn": "days.feelslikemin",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.feelslikemin",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.feelslike",
+            "dataType": "double",
+            "sourceColumn": "days.feelslike",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.feelslike",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.dew",
+            "dataType": "double",
+            "sourceColumn": "days.dew",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.dew",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.humidity",
+            "dataType": "double",
+            "sourceColumn": "days.humidity",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.humidity",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.precip",
+            "dataType": "double",
+            "sourceColumn": "days.precip",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.precip",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.precipprob",
+            "dataType": "double",
+            "sourceColumn": "days.precipprob",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.precipprob",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.precipcover",
+            "dataType": "double",
+            "sourceColumn": "days.precipcover",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.precipcover",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.preciptype",
+            "dataType": "string",
+            "sourceColumn": "days.preciptype",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.preciptype",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.snow",
+            "dataType": "double",
+            "sourceColumn": "days.snow",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.snow",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.snowdepth",
+            "dataType": "double",
+            "sourceColumn": "days.snowdepth",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.snowdepth",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.windgust",
+            "dataType": "double",
+            "sourceColumn": "days.windgust",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.windgust",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.windspeed",
+            "dataType": "double",
+            "sourceColumn": "days.windspeed",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.windspeed",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.winddir",
+            "dataType": "double",
+            "sourceColumn": "days.winddir",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.winddir",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.pressure",
+            "dataType": "double",
+            "sourceColumn": "days.pressure",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.pressure",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.cloudcover",
+            "dataType": "double",
+            "sourceColumn": "days.cloudcover",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.cloudcover",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.visibility",
+            "dataType": "double",
+            "sourceColumn": "days.visibility",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.visibility",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.solarradiation",
+            "dataType": "double",
+            "sourceColumn": "days.solarradiation",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.solarradiation",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.solarenergy",
+            "dataType": "double",
+            "sourceColumn": "days.solarenergy",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.solarenergy",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.uvindex",
+            "dataType": "double",
+            "sourceColumn": "days.uvindex",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.uvindex",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.severerisk",
+            "dataType": "double",
+            "sourceColumn": "days.severerisk",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.severerisk",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.sunrise",
+            "dataType": "string",
+            "sourceColumn": "days.sunrise",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.sunrise",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.sunriseEpoch",
+            "dataType": "int64",
+            "sourceColumn": "days.sunriseEpoch",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "days.sunriseEpoch",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.sunset",
+            "dataType": "string",
+            "sourceColumn": "days.sunset",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.sunset",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.sunsetEpoch",
+            "dataType": "int64",
+            "sourceColumn": "days.sunsetEpoch",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "days.sunsetEpoch",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.moonphase",
+            "dataType": "double",
+            "sourceColumn": "days.moonphase",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.moonphase",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.conditions",
+            "dataType": "string",
+            "sourceColumn": "days.conditions",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.conditions",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.description",
+            "dataType": "string",
+            "sourceColumn": "days.description",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.icon",
+            "dataType": "string",
+            "sourceColumn": "days.icon",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.icon",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.stations",
+            "dataType": "string",
+            "sourceColumn": "days.stations",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.stations",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.source",
+            "dataType": "string",
+            "sourceColumn": "days.source",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.source",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.datetime",
+            "dataType": "string",
+            "sourceColumn": "days.hours.datetime",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.datetime",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.datetimeEpoch",
+            "dataType": "int64",
+            "sourceColumn": "days.hours.datetimeEpoch",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "days.hours.datetimeEpoch",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.temp",
+            "dataType": "double",
+            "sourceColumn": "days.hours.temp",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.temp",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.feelslike",
+            "dataType": "double",
+            "sourceColumn": "days.hours.feelslike",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.feelslike",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.humidity",
+            "dataType": "double",
+            "sourceColumn": "days.hours.humidity",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.humidity",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.dew",
+            "dataType": "double",
+            "sourceColumn": "days.hours.dew",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.dew",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.precip",
+            "dataType": "double",
+            "sourceColumn": "days.hours.precip",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.precip",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.precipprob",
+            "dataType": "double",
+            "sourceColumn": "days.hours.precipprob",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.precipprob",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.snow",
+            "dataType": "double",
+            "sourceColumn": "days.hours.snow",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.snow",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.snowdepth",
+            "dataType": "double",
+            "sourceColumn": "days.hours.snowdepth",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.snowdepth",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.preciptype",
+            "dataType": "string",
+            "sourceColumn": "days.hours.preciptype",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.preciptype",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.windgust",
+            "dataType": "double",
+            "sourceColumn": "days.hours.windgust",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.windgust",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.windspeed",
+            "dataType": "double",
+            "sourceColumn": "days.hours.windspeed",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.windspeed",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.winddir",
+            "dataType": "double",
+            "sourceColumn": "days.hours.winddir",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.winddir",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.pressure",
+            "dataType": "double",
+            "sourceColumn": "days.hours.pressure",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.pressure",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.visibility",
+            "dataType": "double",
+            "sourceColumn": "days.hours.visibility",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.visibility",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.cloudcover",
+            "dataType": "double",
+            "sourceColumn": "days.hours.cloudcover",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.cloudcover",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.solarradiation",
+            "dataType": "double",
+            "sourceColumn": "days.hours.solarradiation",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.solarradiation",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.solarenergy",
+            "dataType": "double",
+            "sourceColumn": "days.hours.solarenergy",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.solarenergy",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.uvindex",
+            "dataType": "double",
+            "sourceColumn": "days.hours.uvindex",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.uvindex",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.severerisk",
+            "dataType": "double",
+            "sourceColumn": "days.hours.severerisk",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "days.hours.severerisk",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.conditions",
+            "dataType": "string",
+            "sourceColumn": "days.hours.conditions",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.conditions",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.icon",
+            "dataType": "string",
+            "sourceColumn": "days.hours.icon",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.icon",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.stations",
+            "dataType": "string",
+            "sourceColumn": "days.hours.stations",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.stations",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days.hours.source",
+            "dataType": "string",
+            "sourceColumn": "days.hours.source",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "days.hours.source",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "alerts",
+            "dataType": "string",
+            "sourceColumn": "alerts",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "alerts",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.KSGR.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KSGR.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KSGR.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KSGR.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KSGR.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KSGR.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.KSGR.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KSGR.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.id",
+            "dataType": "string",
+            "sourceColumn": "stations.KSGR.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KSGR.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.name",
+            "dataType": "string",
+            "sourceColumn": "stations.KSGR.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KSGR.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.KSGR.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KSGR.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KSGR.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.KSGR.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KSGR.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.KHOU.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KHOU.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KHOU.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KHOU.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KHOU.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KHOU.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.KHOU.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KHOU.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.id",
+            "dataType": "string",
+            "sourceColumn": "stations.KHOU.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KHOU.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.name",
+            "dataType": "string",
+            "sourceColumn": "stations.KHOU.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KHOU.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.KHOU.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KHOU.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KHOU.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.KHOU.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KHOU.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.KAXH.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KAXH.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KAXH.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KAXH.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KAXH.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KAXH.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.KAXH.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KAXH.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.id",
+            "dataType": "string",
+            "sourceColumn": "stations.KAXH.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KAXH.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.name",
+            "dataType": "string",
+            "sourceColumn": "stations.KAXH.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KAXH.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.KAXH.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KAXH.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KAXH.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.KAXH.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KAXH.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.KIAH.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KIAH.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KIAH.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KIAH.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KIAH.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KIAH.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.KIAH.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KIAH.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.id",
+            "dataType": "string",
+            "sourceColumn": "stations.KIAH.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KIAH.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.name",
+            "dataType": "string",
+            "sourceColumn": "stations.KIAH.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KIAH.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.KIAH.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KIAH.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KIAH.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.KIAH.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KIAH.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.C8931.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.C8931.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.C8931.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.C8931.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.C8931.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.C8931.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.C8931.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.C8931.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.id",
+            "dataType": "string",
+            "sourceColumn": "stations.C8931.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.C8931.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.name",
+            "dataType": "string",
+            "sourceColumn": "stations.C8931.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.C8931.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.C8931.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.C8931.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.C8931.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.C8931.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.C8931.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.E8485.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E8485.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.E8485.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E8485.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.E8485.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E8485.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.E8485.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.E8485.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.id",
+            "dataType": "string",
+            "sourceColumn": "stations.E8485.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.E8485.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.name",
+            "dataType": "string",
+            "sourceColumn": "stations.E8485.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.E8485.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.E8485.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.E8485.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E8485.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.E8485.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E8485.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.KMCJ.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KMCJ.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KMCJ.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KMCJ.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.KMCJ.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KMCJ.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.KMCJ.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KMCJ.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.id",
+            "dataType": "string",
+            "sourceColumn": "stations.KMCJ.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KMCJ.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.name",
+            "dataType": "string",
+            "sourceColumn": "stations.KMCJ.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.KMCJ.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.KMCJ.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.KMCJ.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.KMCJ.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.KMCJ.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.KMCJ.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.distance",
+            "dataType": "double",
+            "sourceColumn": "stations.E4405.distance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E4405.distance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.latitude",
+            "dataType": "double",
+            "sourceColumn": "stations.E4405.latitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E4405.latitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.longitude",
+            "dataType": "double",
+            "sourceColumn": "stations.E4405.longitude",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E4405.longitude",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.useCount",
+            "dataType": "int64",
+            "sourceColumn": "stations.E4405.useCount",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.E4405.useCount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.id",
+            "dataType": "string",
+            "sourceColumn": "stations.E4405.id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.E4405.id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.name",
+            "dataType": "string",
+            "sourceColumn": "stations.E4405.name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "stations.E4405.name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.quality",
+            "dataType": "int64",
+            "sourceColumn": "stations.E4405.quality",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "stations.E4405.quality",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "stations.E4405.contribution",
+            "dataType": "double",
+            "sourceColumn": "stations.E4405.contribution",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "stations.E4405.contribution",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.datetime",
+            "dataType": "string",
+            "sourceColumn": "currentConditions.datetime",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currentConditions.datetime",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.datetimeEpoch",
+            "dataType": "int64",
+            "sourceColumn": "currentConditions.datetimeEpoch",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "currentConditions.datetimeEpoch",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.temp",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.temp",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.temp",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.feelslike",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.feelslike",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.feelslike",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.humidity",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.humidity",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.humidity",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.dew",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.dew",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.dew",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.precip",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.precip",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.precip",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.precipprob",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.precipprob",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.precipprob",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.snow",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.snow",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.snow",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.snowdepth",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.snowdepth",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.snowdepth",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.preciptype",
+            "dataType": "string",
+            "sourceColumn": "currentConditions.preciptype",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currentConditions.preciptype",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.windgust",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.windgust",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.windgust",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.windspeed",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.windspeed",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.windspeed",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.winddir",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.winddir",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.winddir",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.pressure",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.pressure",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.pressure",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.visibility",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.visibility",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.visibility",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.cloudcover",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.cloudcover",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.cloudcover",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.solarradiation",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.solarradiation",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.solarradiation",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.solarenergy",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.solarenergy",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.solarenergy",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.uvindex",
+            "dataType": "double",
+            "sourceColumn": "currentConditions.uvindex",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "currentConditions.uvindex",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.conditions",
+            "dataType": "string",
+            "sourceColumn": "currentConditions.conditions",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currentConditions.conditions",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.icon",
+            "dataType": "string",
+            "sourceColumn": "currentConditions.icon",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currentConditions.icon",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currentConditions.stations",
+            "dataType": "string",
+            "sourceColumn": "currentConditions.stations",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currentConditions.stations",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "WeatherAPI",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
         "name": "customer",
         "sourceLineageTag": "[dbo].[customer]",
         "columns": [
