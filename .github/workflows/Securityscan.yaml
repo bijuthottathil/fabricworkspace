@@ -22,9 +22,8 @@ jobs:
 
 
 
-    # 3️⃣ Dependency & Docker Scan (Trivy)
-    - name: Install Trivy
-      uses: aquasecurity/trivy-action@v0.10.0
+    - name: Trivy FS Scan
+      uses: aquasecurity/trivy-action@0.15.0
       with:
         scan-type: 'fs'
         scan-ref: '.'
