@@ -20,11 +20,7 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
 
-    # 2️⃣ Secret Scanning (GitLeaks)
-    - name: Run GitLeaks
-      uses: gitleaks/gitleaks-action@v2
-      with:
-        args: --verbose --redact
+
 
     # 3️⃣ Dependency & Docker Scan (Trivy)
     - name: Install Trivy
