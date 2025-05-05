@@ -1,0 +1,51 @@
+name: Compliance Checks CI
+
+on:
+  workflow_dispatch:  
+
+jobs:
+  compliance-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 1️⃣ Code Scanning (CodeQL)
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: java  # or python, javascript, etc.
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+    # 2️⃣ Secret Scanning (GitLeaks)
+    - name: Run GitLeaks
+      uses: gitleaks/gitleaks-action@v2
+      with:
+        args: --verbose --redact
+
+    # 3️⃣ Dependency & Docker Scan (Trivy)
+    - name: Install Trivy
+      uses: aquasecurity/trivy-action@v0.10.0
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+
+    - name: Trivy Docker Image Scan
+      run: |
+        docker build -t myapp:latest .
+        trivy image myapp:latest
+
+    # 4️⃣ Infrastructure as Code Scan (Checkov)
+    - name: Run Checkov
+      uses: bridgecrewio/checkov-action@v12
+      with:
+        directory: ./
+
+    # ✅ Optional: License Compliance (FOSSA)
+    - name: FOSSA Scan
+      uses: fossas/fossa-action@main
+      with:
+        api-key: ${{ secrets.FOSSA_API_KEY }}
